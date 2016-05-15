@@ -3,7 +3,7 @@
 	<head>
 		<style type="text/css">
 			#player{
-	          height: 500px;
+	          height: 400px;
 	          /*width: 100%;*/
 			}
 /*
@@ -29,15 +29,17 @@
 	    <meta name="mobile-web-app-capable" content="yes">
 	    <meta name="apple-mobile-web-app-capable" content="yes" />
 	    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
-
+		<!-- <link href="../style.css" rel="stylesheet" type="text/css"> -->
 
 	</head>
   <body>
     <!-- 1. The <iframe> (and video player) will replace this <div> tag. -->
     <!-- <div id="player" class="video-container"></div> -->
+    <h1>HIIIII</h1>
+    <iframe id="player" width="100%" allowfullscreen frameborder="0" src="../../index.html?video=client/video/congo_2048.mp4&is_stereo=true"></iframe>
 
-    <iframe id="player" width="100%" allowfullscreen frameborder="0" src="//storage.googleapis.com/vrview/index.html?image=//photovrse.com/examples/coral.jpg&is_stereo=true"></iframe>
-
+     <!-- ?video=client/video/congo_2048.mp4&is_stereo=true&image=client/video/congo_2048.jpg -->
+<!-- 
     <script>
       // 2. This code loads the IFrame Player API code asynchronously.
       var tag = document.createElement('script');
@@ -81,6 +83,8 @@
         player.stopVideo();
       }
     </script>
+ -->
+    <!-- <script src="build/vrview-analytics.min.js"></script> -->
   </body>
 </html>
 
