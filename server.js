@@ -21,11 +21,19 @@ var server = app.listen(8000, function() {
  console.log("listening on port 8000");
 })
 
+app.use(function(req, res, next) {
+	// req.header()
+  res.header("Access-Control-Allow-Origin", "*");
+  res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
+  next();
+});
 
+//api key AIzaSyCXe6kWvFnnXRkgeelYryNJqUzJkftY4wY
 
 // root route to render the index.ejs view
 app.get('/', function(req, res) {
-  res.render('index');
+	console.log(res);
+    res.render('index');
 
 })
 
