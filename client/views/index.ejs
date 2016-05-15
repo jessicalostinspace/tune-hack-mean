@@ -6,7 +6,24 @@
 	          /*height: 100px;*/
 	          /*width: 100%;*/
 			}
-/*
+			a , p{
+			
+            background-color: #56bfef ;
+            color: white;
+            font-size: 30px;
+            padding: 20px 50px;
+       		margin: 20px;
+       		text-decoration: none;
+			}
+			p{
+				border: 1px solid black;
+			}
+			body{
+			text-align:center;
+       		font-family: sans-serif;
+       		text-transform: uppercase;
+			}
+			/*			
 			.video-container {
 				position:relative;
 				/*padding-bottom:56.25%;*/
@@ -23,6 +40,7 @@
 				height:100%;
 			}
 			*/
+
 		</style>		
 
 		<meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
@@ -35,8 +53,21 @@
   <body>
     <!-- 1. The <iframe> (and video player) will replace this <div> tag. -->
     <!-- <div id="player" class="video-container"></div> -->
-    <a href="/video.html?video=/video/congo_2048.mp4?autoplay=1&is_stereo=true&image=/video/congo_2048.jpg">GORILLAS</a>
-    <a href="/video.html?video=/video/congo_2048.mp4?autoplay=1&is_stereo=true&image=/video/congo_2048.jpg">ANDES</a><!-- 
+
+<!--     <a href="/video.html?video=/video/congo_2048.mp4?autoplay=1&is_stereo=true&image=/video/congo_2048.jpg">GORILLAS</a> -->
+ 
+    <h1>Where do you want to go?</h1>
+    <p>
+	    <a href="/video.html?image=/video/congo_2048.jpg&is_stereo=true">GORILLAS</a>
+	</p>
+	<p>
+	    <a href="/video.html?image=/pano/andes_2048.jpg&is_stereo=true">ANDES</a>
+	</p>
+	<p>
+	    <a href="/video.html?image=/coral.jpg&is_stereo=true">CORAL</a>
+	</p>
+	    <!-- 
+
     <iframe id="player" width="100%" allowfullscreen frameborder="0" src="/video.html?video=/video/congo_2048.mp4&is_stereo=true&image=/video/congo_2048.jpg"></iframe>
  -->
 
@@ -66,6 +97,7 @@
 		//     }
 		//   });
 		// }
+
 
       // 4. The API will call this function when the video player is ready.
       function onPlayerReady(event) {
