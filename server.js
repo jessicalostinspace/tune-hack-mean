@@ -6,7 +6,8 @@ var path = require("path");
 var app = express();
 // static content 
 // app.use(express.static(path.join(__dirname, "./static")));
-app.use(express.static(path.join(__dirname, "./client/video")));
+app.use(express.static(path.join(__dirname, "./client")));
+app.use(express.static(path.join(__dirname, "./build")));
 // require body-parser
 var bodyParser = require('body-parser');
 // use it!
